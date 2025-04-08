@@ -3,7 +3,7 @@ import Style from './button.module.scss'
 
 interface IButton {
     children: ReactNode;
-    onClick: any
+    onClick: (event: React.MouseEvent<HTMLDivElement>) => void;
 }
 
 export const ButtonCustom = ({children, onClick }: IButton) => {
